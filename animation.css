@@ -127,10 +127,10 @@ main
 header .logo_img {
 
     display: block;
-    width: 24.79px;
+    width: 20px;
     height: 20.15px;
     background-image: url('logo.svg');
-	margin-right: 15px;
+	margin-right: 17px;
 
 }
 
