@@ -1,0 +1,6 @@
+<feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+  <feFuncR type="table" tableValues="(189/255) 0.9882352941"></feFuncR>
+  <feFuncG type="table" tableValues="(11/255) 0.7333333333"></feFuncG>
+  <feFuncB type="table" tableValues="(145/255) 0.05098039216"></feFuncB>
+  <feFuncA type="table" tableValues="0 1"></feFuncA>
+</feComponentTransfer>

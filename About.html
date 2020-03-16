@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ensvee</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="about.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+ <body>
+	<header>
+		<div class="header">
+			<a href="" class="logo">
+				<span class="logo_img"></span>
+				<img class="logo_text" src="ensvee.svg">
+				<!-- <span class="logo_text">ensvee</span> -->
+			</a>
+			 <nav>
+				 <div class="hamburger nav-visible">
+					<div></div><div></div><div></div>
+				 </div>
+			   <ul class="nav nav-visible">
+					<li ><a href="index.html">enterprise</a></li>
+                    <li><a href="student.html">student</a></li>
+                    <li class="active-link"><a href="">about</a></li>
+			   </ul>
+			</nav>
+		</div>
+    </header>
+    <main>
+        <div class="page about-section">
+			<img class="about-bg nav-visible" src="about/bg-about.svg">  
+            <div class="wrap">
+					<h1 class="title-sec">About us</h1>
+                    <p>In this forever changing and super competitive market, innovation has become one of the most important assets for a company for sustaining in the market. Also, finding the most suitable person for innovation has always been a pain for not just startups but also blue chips. We are helping startups and companies in getting a leap ahead of their competitors by helping them launch innovation faster. We outsource companies problem to ingenious college students for creating innovative solutions with the widest perspective. These solutions could be a way to break into new markets or could open up entire new customer bases. Simultaneously, We changing the conventional hiring procedures adopted by companies and replacing it with a modern more curated approach which ensures that the company gets the most suited employee for their product without wasting time and resources. Using the latest technology, we find the most befitting college and an excellent group of  students toprovide you with the best possible solution to your problem.</p>
+                    <div class="come-join">
+                        <h2>Come join the Ensvee family, and become the front runner</h3>
+                        <a href="mailto:connect@ensvee.com">connect@ensvee.com</a>
+                    </div> 
+                </div>
+        </div>
+        
+        <div class="page team-section">
+            <div class="wrap">
+                <h1 class="title-sec">Team</h1>
+                
+                <div class="team-list">
+                <!-- Abhishek Khandelwal -->   
+                    <div class="team-tile">
+                        <div class="team-img">
+                        <img src="about/01.png">
+                        </div>
+                        <div class="team-text">
+                            <h3>Abhishek Khandelwal</h3>
+                            <p>Lead</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-tile">
+                        <div class="team-img">
+                        <img src="about/02.png">
+                        </div>
+                        <div class="team-text">
+                            <h3>Vineet Kumar</h3>
+                            <p>Tech Specialist</p>
+                        </div>
+                    </div>
+
+                    <div class="team-tile">
+                        <div class="team-img">
+                        <img src="about/03.png">
+                        </div>
+                        <div class="team-text">
+                            <h3>Vardaan Grover</h3>
+                            <p>Marketing Specialist</p>
+                        </div>
+                    </div>
+                    <div class="team-tile">
+                        <div class="team-img">
+                        <img src="about/04.png">
+                        </div>
+                        <div class="team-text">
+                            <h3>Abhinav Garg</h3>
+                            <p>Operations Specialist</p>
+                        </div>
+                    </div>
+
+                    <div class="team-tile">
+                        <div class="team-img">
+                        <img src="about/05.png">
+                        </div>
+                        <div class="team-text">
+                            <h3>Akshad Bhandula</h3>
+                            <p>Finance Specialist</p>
+                        </div>
+                    </div>
+
+                    <div class="team-tile">
+                        <div class="team-img">
+                        <img src="about/06.png">
+                        </div>
+                        <div class="team-text">
+                            <h3>Manoj Kumar</h3>
+                            <p>Expansion Specialist</p>
+                        </div>
+                    </div>
+                    <div class="team-tile">
+                        <div class="team-img">
+                        <img src="about/07.png">
+                        </div>
+                        <div class="team-text">
+                            <h3>Unnat</h3>
+                            <p>Web Specialist</p>
+                        </div>
+                    </div>
+
+                    <div class="team-tile">
+                        <div class="team-img">
+                        <img src="about/08.png">
+                        </div>
+                        <div class="team-text">
+                            <h3>Shubham Sharma</h3>
+                            <p>UX & UI Specialist</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+			<div><img src="logo.svg"><img src="ensvee.svg"></div>
+			<p>Copyright  &copy; 2020</p>
+		 </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script>
+        var controller = new ScrollMagic.Controller();
+        const main = document.querySelector("nav");
+		const hamburger = document.querySelector(".hamburger");
+		const navUl = document.querySelector(".nav");
+		var tl = new TimelineMax({ paused: true });
+		tl.to(".nav", 0, { display: "none" });
+		tl.to(".nav", 0, { display: "flex" });
+
+		tl.to(".nav", 0.3, { opacity: 1 })
+		tl.to(".nav li", .3, { opacity: 1 })
+
+		tl.to("main .page > :not(.nav-visible)", 0.2, { opacity:0}, "-=.6")
+		// tl.to(".hero-bg", 0.3, {scale:0.8}, "-=0.6")
+		tl.reverse()
+		hamburger.addEventListener('click', ()=>
+		{
+			main.classList.toggle("nav-opened");
+			tl.reversed() ? tl.play() :  tl.reverse() 
+
+        });
+
+        var tl2 = new TimelineMax();
+
+		const Scene2 = new ScrollMagic.Scene({
+			triggerElement : ".about-section .title-sec",
+			triggerHook : "onLeave"
+		}).setClassToggle('.header', 'black')
+		.addTo(controller)
+
+    </script>
+    
+        
+</body>
+</html>

@@ -1,0 +1,153 @@
+.about-bg
+{
+    position: absolute;
+    right:50%;
+    top:0;
+    transform: translateX(50%);
+    z-index: -1;
+}
+
+.about-section
+{
+    /* height: 100vh; */
+    padding-top:150px;
+    padding-bottom:150px;
+}
+
+.title-sec
+{
+    text-align: center;
+}
+
+.about-section p
+{
+    font-size: 18px;
+    opacity: 0.8;
+    font-weight: 300;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+.come-join
+{
+    margin-top:50px;
+    text-align: center;
+}
+
+.come-join h2
+{
+    font-size: 35px;
+    margin: 15px 0px;
+}
+
+.come-join a
+{
+    color: #44D7B6;
+    font-size: 29px;
+    text-decoration: none;
+    position: relative;
+}
+.come-join a::after
+{
+    content: "";
+    width: 98%;
+    position: absolute;
+    background-color: #44D7B6;
+    height: 1px;
+    left: 1.5%;
+    top: 1.1em;
+}
+
+
+/* TEAM Section  */
+
+.team-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap:80px 30px;
+}
+
+.team-img
+{
+    /* width: 309px; */
+    /* height: 215px; */
+    background-color: rgba(255,255,255,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.team-img img 
+{
+    width: 100%;
+    display: block;
+    height: 100%;
+    filter: grayscale(1);
+    transition: filter 0.2s ease-in;
+}
+
+.team-img::before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    width:100%;
+    top:50%;
+    transform:translateY(-50%);
+    height:12px;
+    
+    background: linear-gradient(270deg, #44D7B6, #3BB0EA,  #44D7B6 );
+    background-size: 200% 100%;
+    z-index: -1;
+
+    transition: background-position 0.1s  ease-in-out;
+}
+
+.team-text
+{
+    text-align: center;
+}
+
+.team-text h3
+{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.team-text p
+{
+    margin-top:5px;
+    opacity: 0.7;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.team-tile:hover img 
+{
+    filter: grayscale(0.2);
+    transition: filter 0.2s ease-in;
+}
+
+.team-tile:hover .team-img::before
+{
+    background-position: 100% 0%;
+}
+
+@media(max-width:600px)
+{
+    .about-section
+    {
+        
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+
+    .come-join h2
+    {    font-size: 30px;}
+
+    .come-join a {font-size: 26px; }
+
+    .about-bg {transform: translateX(50%) scale(.7) translateY(-22%);}    
+}
