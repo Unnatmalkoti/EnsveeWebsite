@@ -1006,7 +1006,7 @@ button
 }
 #bg-12
 {
-	bottom: -308px;;
+    bottom: -160px;
 	right: calc(50vw - 50px - 600px);
 }
 
@@ -1039,6 +1039,7 @@ button
 .contact-us 
 {
 	text-align: center;
+	/* overflow: hidden; */
 }
 
 .contact-us .icons
@@ -1246,6 +1247,7 @@ footer p
 	{
 		right: calc(50vw - 179px - 600px);
 		transform: scale(.7);
+		transform-origin: bottom;
 	}
 
 }

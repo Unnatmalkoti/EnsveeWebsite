@@ -11,7 +11,7 @@
  <body>
 	<header>
 		<div class="header">
-			<a href="" class="logo">
+			<a href="/" class="logo">
 				<span class="logo_img"></span>
 				<img class="logo_text" src="ensvee.svg">
 				<!-- <span class="logo_text">ensvee</span> -->
@@ -23,7 +23,7 @@
 			   <ul class="nav nav-visible">
 					<li class="active-link"><a href="">enterprise</a></li>
 					<li><a href="student.html">student</a></li>
-					<li><a href="About.html">about</a></li>
+					<li><a href="About.html">about us</a></li>
 			   </ul>
 			</nav>
 		</div>
@@ -48,7 +48,7 @@
 					   
 					<div class="button-tray">
 						<a href="#more" type="button" id='hero-btn1' class="button"><span>LEARN MORE</span><img src="right-arrow.svg"></a>
-					    <a type="button" id='hero-btn2' class="button"><span>CONTACT US</span><img src="right-arrow.svg"></a>
+					    <a href="#contact-us"type="button" id='hero-btn2' class="button"><span>CONTACT US</span><img src="right-arrow.svg"></a>
 					</div>
 					   
 			 </div>
@@ -292,21 +292,21 @@
 				
 			</div>  
 		 </div>
-		 <div class="contact-us page">
+		 <div id="contact-us" class="contact-us page">
 			<img id="bg-12" class="bg-images nav-visible" src="bg-12.svg">
 			 <div class=" wrap">
 				 <h1 class="title-sec">
 					Contact Us
 				 </h1>
-				 <div class="icons">
-					 <a><img src="emaillogo.svg"></a>
-					 <a><img src="instagram.svg"></a>
-					 <a><img src="linked-in.svg"></a>
-					 <a><img src="facebook logo.svg"></a>
+				 <div  class="icons">
+					 <a href="mailto:ensvee@gmail.com"><img src="emaillogo.svg"></a>
+					 <a href="https://instagram.com/ensvee?igshid=r59rbmwj8x2v"><img src="instagram.svg"></a>
+					 <a href="https://www.linkedin.com/mwlite/company/ensvee"><img src="linked-in.svg"></a>
+					 <a href="https://m.facebook.com/ensvee"><img src="facebook logo.svg"></a>
 				 </div>
 			 </div>
 		</div>
-		 <footer>
+		 <footer >
 				<div><img src="logo.svg"><img src="ensvee.svg"></div>
 				<p>Copyright  &copy; 2020</p>
 		</footer>
@@ -439,10 +439,10 @@
 		tl.to(".nav", 0, { display: "none" });
 		tl.to(".nav", 0, { display: "flex" });
 
-		tl.to(".nav", 0.3, { opacity: 1 })
-		tl.to(".nav li", .3, { opacity: 1 })
+		tl.to(".nav", 0.2, { opacity: 1 })
+		tl.to(".nav li", .2, { opacity: 1 })
 
-		tl.to("main .page > :not(.nav-visible)", 0.2, { opacity:0}, "-=.6")
+		tl.to("main .page > :not(.nav-visible)", 0.2, { opacity:0}, "-=.3")
 		// tl.to(".hero-bg", 0.3, {scale:0.8}, "-=0.6")
 		tl.reverse()
 		hamburger.addEventListener('click', ()=>
