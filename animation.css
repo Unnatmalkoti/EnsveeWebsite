@@ -437,11 +437,6 @@ header .logo_img {
 	.nav-opened .hamburger :nth-child(1)	{transform: translateX(2px)rotate(45deg);}
 	.nav-opened .hamburger :nth-child(3)	{transform: translateX(2px)rotate(-45deg);}
 
-	.nav-opened .hero-bg
-	{
-		/* visibility: visible; */
-		/* transform: scale(0.8); */
-	}
 
 	nav ul.nav
 	{
